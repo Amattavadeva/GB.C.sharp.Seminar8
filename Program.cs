@@ -115,7 +115,7 @@ int[,] mass3 = new int[MassRows1, MassColumns2];
 
 if (MassColumns1 != MassRows2)
 {
-    Console.WriteLine("Умножение не возможно!");
+    Console.WriteLine("Умножение невозможно!");
 }
 
 else

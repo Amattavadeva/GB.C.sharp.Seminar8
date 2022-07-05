@@ -95,7 +95,7 @@ void Print(int[,] array)
 /* Задача 58: Задайте две матрицы. Напишите программу, которая будет
 находить произведение двух матриц. */
 
-int[,] mass1 = new int[3, 3];
+/* int[,] mass1 = new int[3, 3];
 int[,] mass2 = new int[3, 3];
 
 Console.WriteLine("Первая матрица");
@@ -160,4 +160,43 @@ void Print(int[,] mass)
         }
         Console.WriteLine();
     }
-}
+} */
+
+/* Задача 60: Сформируйте трёхмерный массив из неповторяющихся
+двузначных чисел. Напишите программу, которая будет построчно выводить
+массив, добавляя индексы каждого элемента. 
+
+Понятно, что это как кубик, и понятно как заполнить массив неповторяющимися значениями. 
+Понятно, что нужно выводить стороны кубика, будто поворачивая его перед собой, а для этого используются i, j, k  как координаты x,y,z
+для ориентации в трехмерном пространстве. Но как это реализовать в коде - и сам не знаю и ничего понятного не нашёл
+*/
+
+//генерация случайных чисел
+/* Random rnd = new Random();
+Queue<int> que = new Queue<int>(Enumerable.Range(10, 100).OrderBy(_ => rnd.NextDouble()));
+int[,,] mass = new int[3, 3, 3];
+for (int i = 0; i < mass.GetLength(0); ++i)
+{
+    for (int j = 0; j < mass.GetLength(1); ++j)
+    {
+        for (int k = 0; k < mass.GetLength(2); k++)
+        {
+            if (j != 0) Console.Write('\t');
+            Console.Write(mass[i, j, k] = que.Dequeue());
+        }
+    }
+    Console.WriteLine();
+} */
+
+// печать 3-х мерного массива
+/* for (int i = 0; i < mass.GetLength(0); i++)
+{
+    for (int j = 0; j < mass.GetLength(1); j++)
+    {
+        for (int k = 0; k < mass.GetLength(2); k++)
+        {
+            Console.WriteLine(mass[i, j, k] + "\t");
+        }
+    }
+    Console.WriteLine();
+} */
